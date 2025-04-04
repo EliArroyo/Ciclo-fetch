@@ -7,7 +7,7 @@ module PC_v2 (
 );
 
 always @(posedge clk) begin
-    if (rst)
+    if (reset)
         out <= 32'd0;
     else
         out <= in;
